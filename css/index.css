@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.all {
+  display: grid;
+  grid-template-columns: 360px calc(100vw - 360px);
+  grid-template-rows: 88px calc(100vh - 88px);
+  overflow: hidden;
+}
+
+header {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.menu {
+  width: 360px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.nav {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: flex;
+  height: 88px;
+  width: 1fr;
+  background-color: #f7e242;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav ul img {
+  margin-right: 26px;
+  vertical-align: middle;
+}
+
+.nav > ul > li {
+  margin-right: 40px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10px;
+  margin-top: 13px;
+}
+
+ul li:hover .line {
+  left: 0%;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-bottom: 4px dotted #fff;
+  position: absolute;
+  top: 80%;
+  transition: 0.5s;
+  left: -100%;
+  z-index: 10;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #403e3e;
+  font-family: "TBUD丸ゴシック Std", sans-serif;
+}
+
+/* .nav ul li:hover .itemboder{
+  width: 100%;
+} */
+
+/* .nav ul li:hover{
+  border-bottom:4px #fff dotted ;
+  margin-bottom: -4px;
+} */
+
+.nav h1 {
+  line-height: 32px;
+}
+
+.nav ul li:first-child {
+  margin-left: 48px;
+  margin-right: 40px;
+}
+
+.img {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url(../img/index_googlemap.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input {
+  padding-left: 8px;
+  width: 217px;
+  height: 50px;
+  font-size: 15px;
+  vertical-align: 6px;
+}
+
+input::placeholder {
+  font-size: 15px;
+  font-family: "TBUD丸ゴシック Std";
+}
+
+.small_magnifying_glass {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.search {
+  border: 1px solid #403e3e;
+  padding: 19px 15px 15px 18px;
+}
+
+.menu_ul {
+  width: 264px;
+  height: 124px;
+  border-left: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  border-right: 1px solid #707070;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #ee6d4a;
+  padding: 16px 56px 56px 38px;
+}
+
+.navi_ul li {
+  font-family: "TBUD丸ゴシック Stda", Arial, Helvetica, sans-serif;
+}
+
+.can {
+  background-image: url(../img/can.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 48px;
+  height: 27.5px;
+  text-align: center;
+  padding-top: 53px;
+  margin-left: 15px;
+}
+
+.bottle {
+  background-image: url(../img/bottle.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 120px;
+  height: 29px;
+  text-align: center;
+  padding-top: 53px;
+  margin-left: 9px;
+}
+
+.glass_bottle {
+  background-image: url(../img/glass_bottle.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 64px;
+  height: 29px;
+  text-align: center;
+  padding-top: 53px;
+}
+
+.burn {
+  background-image: url(../img/burn.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 80px;
+  height: 29px;
+  text-align: center;
+  padding-top: 53px;
+}
+
+.incombustible {
+  background-image: url(../img/incombustible.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  flex-wrap: wrap;
+  width: 97px;
+  height: 29px;
+  text-align: center;
+  padding-top: 53px;
+}
+
+.route_search {
+  background-image: url(../img/route_search.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  flex-wrap: wrap;
+  width: 64px;
+  height: 29px;
+  text-align: center;
+  padding-top: 53px;
+  padding-right: 0;
+}
+
+.news {
+  width: 100%;
+  height: 72px;
+  background-color: #f2eded;
+}
+
+.news h2 {
+  text-align: center;
+  line-height: 72px;
+  font-family: "TBUD丸ゴシック Std", sans-serif;
+}
+
+.large_capacity {
+  border-top: dotted 1px #707070;
+  border-bottom: dotted 1px #707070;
+  background-image: url(../img/laegr_garbage.png);
+  background-repeat: no-repeat;
+  background-position: center left 15px;
+}
+
+.new_capacity {
+  border-bottom: dotted 1px #707070;
+  background-image: url(../img/new_garbage.png);
+  background-repeat: no-repeat;
+  background-position: center left 15px;
+}
+
+.news h3 {
+  font-size: 15px;
+  font-family: "TBUD丸ゴシック Std";
+}
+
+.news p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.large_capacity_txt,
+.new_capacity_txt {
+  margin-left: 90px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
